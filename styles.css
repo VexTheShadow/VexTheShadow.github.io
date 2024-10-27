@@ -1,0 +1,95 @@
+/* Modificaciones en el archivo BOOSTRAP 
+*  --bs-border-color: #1abe4d; -> Cambiado la variable de los bordes para que tenga el mismo valor que nuestra variable "--text-secondary".
+*
+*
+*
+*/
+
+:root {
+    --text-primary: #ddd;
+    --text-secondary: rgba(26, 190, 77);
+    --bg-primary: #12191c;
+    --bg-secondary: black;
+    --border-color: rgba(26, 190, 77, 0.5);
+}
+body {
+    background-color: var(--bg-primary) !important;
+}
+/* Web */
+.text-primary {
+    color: var(--text-primary) !important;
+}
+.text-secondary {
+    color: var(--text-secondary) !important;
+}
+.bg-primary {
+    background-color: var(--bg-primary) !important;
+}
+/* Links */
+.link:hover {
+    color: var(--text-secondary) !important;
+}
+/* Cards */
+.card {
+    border-color: var(--bg-secondary) !important;
+    background-color: var(--bg-secondary) !important;
+}
+.card:hover {
+    border-color: var(--border-color) !important;
+}
+.projects-card-item, .hobby-card-item {
+    width: calc(33.3% - 1rem) !important;
+}
+.projects-card-item img, .hobby-card-item img {
+    height: 60% !important;
+}
+/* Accordion */
+.accordion {
+    background-color: var(--bg-primary) !important;
+}
+.accordion-item {
+    background-color: var(--bg-primary) !important;
+    border: 1px solid var(--border-color) !important;
+}
+.accordion-body {
+    color: var(--text-primary) !important;
+}
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--text-primary) !important;
+    background-color: var(--border-color) !important;
+}
+.accordion-button {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+}
+.accordion-button:focus {
+    border-bottom: 1px solid var(--border-color) !important;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23dddddd' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+}
+.accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23dddddd' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+}
+/* Progress Bar */
+.progress-bar {
+    background-color: var(--text-secondary) !important;
+}
+/* Projects */
+.nav-link {
+    color: var(--text-primary) !important;
+}
+.nav-link.active {
+    background-color: var(--bg-primary) !important;
+    border-color: var(--border-color) var(--border-color) transparent  var(--border-color) !important;
+}
+.tab-pane:not(.active) .tab-contents {
+    display: none !important;
+}
+.tab-content {
+    border: 1px solid var(--border-color);
+    border-top: none;
+}
