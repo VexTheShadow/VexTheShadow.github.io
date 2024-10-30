@@ -1,5 +1,5 @@
 var typed = new Typed("#typed-abautme", {
-    strings: ["Programador.", "Desarrollador Web.", "Cibersegurata."],
+    strings: ["programador.", "desarrollador web.", "técnico en ciberseguridad."],
     typeSpeed: 100,  // Velocidad para escribir cada letra
     backSpeed: 50,   // Velocidad para borrar cada letra
     backDelay: 1000, // Tiempo de espera antes de empezar a borrar
