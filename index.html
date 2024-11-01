@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <link rel="icon" href="assets/media/favicon.png"> <!-- Icono de la pestaña (16x16 / 32x32)-->
     <title>Portfolio</title>
-    <link href="assets/libraries/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/libraries/css/bootstrap.css" rel="stylesheet"/>
+    <link href="assets/libraries/css/timeline.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css">
     <script src="assets/libraries/js/typed.js"></script>
     <script src="assets/libraries/js/bootstrap.bundle.js"></script>
+    <script src="assets/libraries/js/timeline.min.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -34,7 +36,7 @@
           </p>
         </div>
         <div class="col-5 rounded d-flex justify-content-center" style="margin-left: 1.75rem;">
-          <img src="assets/media/skills/technical/front-end.png" class="img-fluid rounded">
+          <img src="falta-foto" class="img-fluid rounded">
         </div>
       </div>
       <div class="mt-5">
@@ -265,9 +267,72 @@
         </div>
       </div>
     </section>
+    <!-- Career -->
     <section id="career" class="container text-primary mt-5 mb-5">
-
+      <div class="row">
+        <div class="col-12 mb-5">
+          <span class="text-secondary">Mi Recorrido</span>
+          <h3>Academico y profesional</h3>
+        </div>
+      </div>
+      <div class="timeline row">
+        <div class="timeline__wrap col-12 p-0">
+          <div class="timeline__items">
+            <div class="timeline__item">
+              <div class="timeline__content text-center" data-bs-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
+                Your content / markup
+                <div class="collapse show" id="collapseOne">
+                  <div class="">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__content text-center" data-bs-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                Your content / markup
+                <div class="collapse show" id="collapseTwo">
+                  <div class="">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__content text-center" data-bs-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
+                Your content / markup
+                <div class="collapse" id="collapseThree">
+                  <div class="">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__content text-center" data-bs-toggle="collapse" href="#collapseFour" role="button" aria-expanded="false" aria-controls="collapseFour">
+                Your content / markup
+                <div class="collapse" id="collapseFour">
+                  <div class="">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__content text-center" data-bs-toggle="collapse" href="#collapseFive" role="button" aria-expanded="false" aria-controls="collapseFive">
+                Your content / markup
+                <div class="collapse" id="collapseFive">
+                  <div class="">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <script src="assets/scripts/timeline.js"></script>
     <!-- Projects -->
     <section id="projects" class="container text-primary mt-5 mb-5">
       <div class="row">
