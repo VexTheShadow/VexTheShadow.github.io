@@ -44,7 +44,7 @@ function timeline(collection, options) {
     },
     visibleItems: {
       type: 'integer',
-      defaultValue: 3
+      defaultValue: 5
     }
   };
 
