@@ -126,7 +126,7 @@ body {
 .carousel-indicators [data-bs-target]:hover {
     opacity: 1 !important;
 }
-/* Timeline */
+/* Timeline basura */
 
 .timeline__item:after {
     background-color: var(--text-secondary);

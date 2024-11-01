@@ -1,5 +1,5 @@
 timeline(document.querySelectorAll('.timeline'), {
-    forceVerticalMode: 800,
+    forceVerticalMode: 1000,
     mode: 'horizontal',
     visibleItems: 4
 });
