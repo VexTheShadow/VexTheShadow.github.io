@@ -82,23 +82,23 @@ body {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23dddddd' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
 }
 /* Projects */
-.nav-link {
+#projects .nav-link {
     color: var(--text-primary) !important;
 }
-.nav-link:hover {
+#projects .nav-link:hover {
     border-color: var(--border-color) !important;
 }
-.nav-link.active {
+#projects .nav-link.active {
     background-color: var(--bg-primary) !important;
     border-color: var(--border-color) var(--border-color) transparent  var(--border-color) !important;
 }
-.nav-tabs {
+#projects .nav-tabs {
     border-bottom: 1px solid var(--border-color) !important;
 }
-.tab-pane:not(.active) .tab-contents {
+#projects .tab-pane:not(.active) .tab-contents {
     display: none !important;
 }
-.tab-content {
+#projects .tab-content {
     border: 1px solid var(--border-color);
     border-top: none;
 }
@@ -182,4 +182,21 @@ body {
     border-top: 1px solid var(--border-color) !important;
     margin-top: 15px;
     padding-top: 10px;
+}
+/* Recomendations */
+#recomendations .nav-link {
+    color: var(--text-primary);
+    border-radius: 0.375rem 0 0 0.375rem;
+}
+#recomendations .nav-link:hover {
+    background-color: var(--border-color);
+}
+#recomendations .nav-link.active {
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem 0 0 0.375rem;
+    background-color: var(--bg-primary);
+}
+#recomendations .tab-content {
+    border: 1px solid var(--border-color) !important;
+    width: 100%;
 }

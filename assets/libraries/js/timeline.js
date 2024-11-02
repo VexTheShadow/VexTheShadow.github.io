@@ -31,7 +31,7 @@ function timeline(collection, options) {
     },
     startIndex: {
       type: 'integer',
-      defaultValue: 0
+      defaultValue: 3
     },
     verticalStartPosition: {
       type: 'string',
