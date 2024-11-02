@@ -183,20 +183,3 @@ body {
     margin-top: 15px;
     padding-top: 10px;
 }
-/* Recomendations */
-#recomendations .nav-link {
-    color: var(--text-primary);
-    border-radius: 0.375rem 0 0 0.375rem;
-}
-#recomendations .nav-link:hover {
-    background-color: var(--border-color);
-}
-#recomendations .nav-link.active {
-    border: 1px solid var(--border-color);
-    border-radius: 0.375rem 0 0 0.375rem;
-    background-color: var(--bg-primary);
-}
-#recomendations .tab-content {
-    border: 1px solid var(--border-color) !important;
-    width: 100%;
-}
