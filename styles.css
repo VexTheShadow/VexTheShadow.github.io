@@ -44,8 +44,10 @@ body {
 .card:hover {
     border-color: var(--border-color) !important;
 }
-.projects-card-item, .hobby-card-item {
-    width: calc(33.3% - 1rem) !important;
+@media (min-width: 992px) {
+    .projects-card-item, .hobby-card-item {
+        width: calc(33.3% - 1rem) !important;
+    }   
 }
 /* Accordion */
 .accordion {
