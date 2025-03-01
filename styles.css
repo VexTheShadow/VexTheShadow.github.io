@@ -25,6 +25,15 @@ body {
 #navbar .list-inline-item:not(:last-child) {
     margin-right: 30px;
 }
+#navbar #dropdown-menu-languages {
+    top: auto !important;
+    left: auto !important;
+    background-color: var(--bg-primary);
+    border-color: var(--border-color);
+}
+#navbar #dropdown-menu-languages .dropdown-item:hover {
+    background-color: var(--border-color);
+}
 /* Links */
 .link:hover {
     color: var(--text-secondary) !important;
