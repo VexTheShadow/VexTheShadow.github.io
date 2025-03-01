@@ -40,7 +40,7 @@ function timeline(collection, options) {
     },
     verticalTrigger: {
       type: 'string',
-      defaultValue: '15%'
+      defaultValue: '1%'
     },
     visibleItems: {
       type: 'integer',
