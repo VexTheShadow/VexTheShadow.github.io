@@ -7,6 +7,7 @@
 }
 body {
     background-color: var(--bg-primary) !important;
+    font-size: 18px;
 }
 /* Web */
 .text-primary {
@@ -23,7 +24,7 @@ body {
 }
 /* Header */
 #navbar .list-inline-item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 2em;
 }
 #navbar #dropdown-menu-languages {
     top: auto !important;
