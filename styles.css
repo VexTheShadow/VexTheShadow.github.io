@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('assets/media/fuentes/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: normal; /* Peso normal (400) */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('assets/media/fuentes/Roboto-Italic-VariableFont_wdth\,wght.ttf') format('truetype');
+    font-weight: bold; /* Peso negrita (700) */
+    font-style: normal;
+}
 :root {
     --text-primary: #ddd;
     --text-secondary: #1abe4d;
@@ -8,6 +21,7 @@
 body {
     background-color: var(--bg-primary) !important;
     font-size: 18px;
+    font-family: 'Roboto', sans-serif;
 }
 /* Web */
 .text-primary {
