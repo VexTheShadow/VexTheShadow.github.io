@@ -7,24 +7,44 @@ const data = [
         "text": "programmer| web developer| cybersecurity technician"
       },
       {
-        "language": "Romanian",
-        "symbol": "ro",
-        "text": "programator| dezvoltator web| tehnician în securitate cibernetică"
+        "language": "Korean",
+        "symbol": "ko",
+        "text": "프로그래머| 웹 개발자| 사이버보안 기술자"
       },
       {
-        "language": "Catalan",
-        "symbol": "ca",
-        "text": "programador| desenvolupador web| tècnic en ciberseguretat"
-      },
-      {
-        "language": "Japanese",
-        "symbol": "ja",
-        "text": "プログラマー|ウェブ開発者|サイバーセキュリティ技術者"
+        "language": "German",
+        "symbol": "de",
+        "text": "Programmierer| Webentwickler| Cybersicherheitstechniker"
       },
       {
         "language": "Arabic",
         "symbol": "ar",
         "text": "مبرمج| مطور ويب| فني الأمن السيبراني"
+      },
+      {
+        "language": "Chinese Simplified",
+        "symbol": "zh-cn",
+        "text": "程序员|网页开发人员|网络安全技术员"
+      },
+      {
+        "language": "Russian",
+        "symbol": "ru",
+        "text": "программист| веб-разработчик| техник по кибербезопасности"
+      },
+      {
+        "language": "Spanish",
+        "symbol": "es",
+        "text": "programador| desarrollador web| técnico en ciberseguridad"
+      },
+      {
+        "language": "French",
+        "symbol": "fr",
+        "text": "programmeur| développeur web| technicien en cybersécurité"
+      },
+      {
+        "language": "Portuguese",
+        "symbol": "pt",
+        "text": "programador | desenvolvedor web | técnico de segurança cibernética"
       }
 ]
 
@@ -41,7 +61,7 @@ data.forEach(item => {
     }
   });
 
-    finalArray.forEach (item => {
+finalArray.forEach (item => {
     console.log(item)
 })
 /*
