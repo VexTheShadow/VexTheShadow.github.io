@@ -25,13 +25,13 @@ body {
 }
 @media (max-width: 992px) {
     body {
-        font-size: calc(1.5rem + 0.3vw) !important;
+        font-size: calc(1.5rem + 1vw) !important;
     }
     .fs-6 {
-        font-size: calc(1.5rem + 0.3vw) !important;
+        font-size: calc(1.5rem + 1vw) !important;
     }
     .fs-5 {
-        font-size: calc(1.8rem + 0.3vw) !important
+        font-size: calc(1.8rem + 1vw) !important
     }
 }
 /* Web */
