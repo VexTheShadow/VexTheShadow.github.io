@@ -60,6 +60,7 @@ body {
     text-decoration: underline !important;
 }
 /* Header */
+
 #navbar .list-inline-item:not(:last-child) {
     margin-right: 2em;
 }
@@ -75,6 +76,9 @@ body {
     }
     #navbar .list-inline-item:not(:last-child) {
         margin-right: 0.5em;
+    }
+    header {
+        font-size: 24px !important;
     }
 }
 #navbar #dropdown-menu-languages .dropdown-item:hover {
