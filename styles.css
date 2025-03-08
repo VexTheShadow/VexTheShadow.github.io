@@ -20,18 +20,18 @@
 }
 body {
     background-color: var(--bg-primary) !important;
-    font-size: 18px;
+    font-size: 1.1em;
     font-family: 'Roboto', sans-serif;
 }
 @media (max-width: 992px) {
     body {
-        font-size: 20px !important;
+        font-size: calc(1.5rem + 0.3vw) !important;
     }
     .fs-6 {
-        font-size: 20px !important;
+        font-size: calc(1.5rem + 0.3vw) !important;
     }
     .fs-5 {
-        font-size: calc(1.275rem + 0.3vw) !important
+        font-size: calc(1.8rem + 0.3vw) !important
     }
 }
 /* Web */
