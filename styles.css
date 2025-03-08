@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('assets/media/fuentes/Roboto-Italic-VariableFont_wdth\,wght.ttf') format('truetype');
+    src: url('assets/media/fuentes/Roboto-Italic-VariableFont_wdth,wght.ttf') format('truetype');
     font-weight: bold; /* Peso negrita (700) */
     font-style: normal;
 }
@@ -60,7 +60,6 @@ body {
     text-decoration: underline !important;
 }
 /* Header */
-
 #navbar .list-inline-item:not(:last-child) {
     margin-right: 2em;
 }
