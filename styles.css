@@ -16,7 +16,7 @@
     --text-secondary: #1abe4d;
     --bg-primary: #12191c;
     --bg-secondary: black;
-    --border-color: rgba(26, 190, 77, 0.5);
+    --border-color: rgba(26, 190, 77, 0.8);
 }
 body {
     background-color: var(--bg-primary) !important;
