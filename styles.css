@@ -23,6 +23,17 @@ body {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
 }
+@media (max-width: 992px) {
+    body {
+        font-size: 20px;
+    }
+    .fs-6 {
+        font-size: 20px !important;
+    }
+    .fs-5 {
+        font-size: calc(1.275rem + 0.3vw) !important
+    }
+}
 /* Web */
 .text-primary {
     color: var(--text-primary) !important;
