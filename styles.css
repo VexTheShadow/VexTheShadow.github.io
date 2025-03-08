@@ -25,7 +25,7 @@ body {
 }
 @media (max-width: 992px) {
     body {
-        font-size: 20px;
+        font-size: 20px !important;
     }
     .fs-6 {
         font-size: 20px !important;
@@ -60,6 +60,9 @@ body {
 @media (max-width: 992px) {
     #navbar #dropdown-menu-languages {
         left: 81% !important;
+    }
+    #navbar .list-inline-item:not(:last-child) {
+        margin-right: 0.5em;
     }
 }
 #navbar #dropdown-menu-languages .dropdown-item:hover {
