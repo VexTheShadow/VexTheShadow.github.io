@@ -61,15 +61,19 @@ body {
 }
 .modal-backdrop {
     z-index: auto !important;
+    opacity: 0.8 !important;
 }
-.modal-body {
-    background-color: var(--bg-primary) !important;
+.modal-body, .modal-content {
+    background-color: transparent !important;
 }
 .modal-dialog {
     max-width: fit-content !important;
 }
 .clicked svg g {
     fill: var(--text-secondary);
+}
+.modal-body ul .list-item:not(:last-child){
+    margin-bottom: 0.5rem !important;
 }
 /* Links */
 .link:hover {
@@ -145,6 +149,7 @@ body {
 }
 #projects .nav-tabs {
     border-bottom: 1px solid var(--border-color) !important;
+    border: 0;
 }
 #projects .tab-pane:not(.active) .tab-contents {
     display: none !important;
@@ -152,6 +157,11 @@ body {
 #projects .tab-content {
     border: 1px solid var(--border-color);
     border-top: none;
+}
+.nav-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 /* Certifications & Acknowledgements*/
 .carousel-inner {
