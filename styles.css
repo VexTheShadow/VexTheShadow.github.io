@@ -148,8 +148,17 @@ body {
     border-color: var(--border-color) var(--border-color) transparent  var(--border-color) !important;
 }
 #projects .nav-tabs {
-    border-bottom: 1px solid var(--border-color) !important;
+    /*border-bottom: 1px solid var(--border-color) !important;*/
     border: 0;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.progress {
+    background-color: var(--bg-primary) !important;
+}
+.progress-bar {
+    background-color: var(--border-color) !important;
 }
 #projects .tab-pane:not(.active) .tab-contents {
     display: none !important;
