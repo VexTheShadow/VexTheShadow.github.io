@@ -137,6 +137,9 @@ body {
 #projects .nav-link {
     color: var(--text-primary) !important;
 }
+.nav-tabs .nav-link:focus {
+    border-color: var(--border-color) !important;
+}
 #projects .nav-link.active {
     color: var(--text-secondary) !important;
 }
@@ -171,6 +174,18 @@ body {
     flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
+}
+.scroll-left {
+    mask-image: linear-gradient(to left, black, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to left, black, black 90%, transparent);
+}
+.scroll-right {
+    mask-image: linear-gradient(to right, black, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, black, black 90%, transparent);
+}
+.scroll-both {
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 /* Certifications & Acknowledgements*/
 .carousel-inner {
