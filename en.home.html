@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/media/favicon.png"> <!-- Icono de la pestaña (16x16 / 32x32)-->
+    <title>Portfolio</title>
+    <link href="assets/libraries/css/bootstrap.css" rel="stylesheet"/>
+    <link href="assets/libraries/css/timeline.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="assets/libraries/js/typed.js"></script>
+    <script src="assets/libraries/js/bootstrap.bundle.js"></script>
+    <script src="assets/libraries/js/timeline.js"></script>
+    <script src="assets/scripts/translate-abautme.js"></script>
+    <script src="assets/scripts/tabs-scroll.js"></script>
+    <script src="assets/scripts/header.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="sticky-top bg-primary">
+      <div class="d-flex justify-content-center fs-2 mt-4" style="color: red;">
+WORK IN PROGRESS 
+</div>
+      <nav id="navbar" class="navbar container d-flex justify-content-center p-0">
+        <ul class="nav-links d-none d-md-block list-inline text-uppercase mt-4 mb-4 ms-2 me-2">
+          <li class="list-inline-item"><a href="#abautme" class="text-decoration-none text-primary link">About me</a></li>
+          <li class="list-inline-item"><a href="#skills" class="text-decoration-none text-primary link">Skills</a></li>
+          <li class="list-inline-item"><a href="#career" class="text-decoration-none text-primary link">Tour</a></li>
+          <li class="list-inline-item"><a href="#projects" class="text-decoration-none text-primary link">Projects</a></li>
+          <li class="list-inline-item"><a href="#certifications-acknowledgements" class="text-decoration-none text-primary link">Certifications</a></li>
+          <li class="list-inline-item text-primary">
+<a class="nav-link dropdown-toggle link text-decoration-none" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+Languages 
+</a> 
+<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" id="dropdown-menu-languages">
+              <!-- https://flagcdn.com/w40/{symbol}.png -->
+              <li><a class="dropdown-item d-flex align-items-center" href="de.home.html"><img src="assets/media/flags/de.png" class="img-fluid mr-2" style="width: 1.5em; height: 1em; margin-right: 0.4em;">Alemán</a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="ro.home.html"><img src="assets/media/flags/ro.png" class="img-fluid mr-2" style="width: 1.5em; height: 1em; margin-right: 0.4em;">Romanian</a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="ko.home.html"><img src="assets/media/flags/kr.png" class="img-fluid mr-2" style="width: 1.5em; height: 1em; margin-right: 0.4em;">Korean</a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="es.home.html"><img src="assets/media/flags/es.png" class="img-fluid mr-2" style="width: 1.5em; height: 1em; margin-right: 0.4em;">Spanish</a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="fr.home.html"><img src="assets/media/flags/fr.png" class="img-fluid mr-2" style="width: 1.5em; height: 1em; margin-right: 0.4em;">Francés</a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="en.home.html"><img src="assets/media/flags/en.png" class="img-fluid mr-2" style="width: 1.5em; height: 1em; margin-right: 0.4em;">Inglés</a></li>          
+              <li><a class="dropdown-item d-flex align-items-center" href="pt.home.html"><img src="assets/media/flags/pt.png" class="img-fluid mr-2" style="width: 1.5em; height: 1em; margin-right: 0.4em;">Portuguese</a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="ru.home.html"><img src="assets/media/flags/ru.png" class="img-fluid mr-2" style="width: 1.5em; height: 1em; margin-right: 0.4em;">Russian</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-md-none d-flex justify-content-between align-items-center mt-2 mb-2 ms-2 me-2 w-100">
+<button id="menu-trigger" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#anchorModal">
+<svg id="menu-svg" viewBox="0,0,256,256" width="24px" height="24px" fill-rule="nonzero"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M5,8c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,23c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,38c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175z"></path></g></g></svg>
+</button>
+<div class="modal fade" id="anchorModal" tabindex="-1" aria-labelledby="anchorModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-custom-size m-auto">
+              <div class="modal-content">
+                <div class="modal-body"> <!-- border border-1 rounded -->
+                  <ul class="d-flex flex-column fs-2 list-unstyled justify-content-center align-items-center text-uppercase mt-2 mb-2 ms-2 me-2">
+                    <li class="list-item"><a href="#abautme" class="text-decoration-none text-primary link">About me</a></li>
+                    <li class="list-item"><a href="#skills" class="text-decoration-none text-primary link">Skills</a></li>
+                    <li class="list-item"><a href="#career" class="text-decoration-none text-primary link">Tour</a></li>
+                    <li class="list-item"><a href="#projects" class="text-decoration-none text-primary link">Projects</a></li>
+                    <li class="list-item"><a href="#certifications-acknowledgements" class="text-decoration-none text-primary link">Certifications</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <li class="list-inline-item text-primary">
+<a class="nav-link dropdown-toggle link text-decoration-none" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+Languages 
+</a> 
+<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" id="dropdown-menu-languages">
+              <!-- https://flagcdn.com/w40/{symbol}.png -->
+              <li><a class="dropdown-item d-flex align-items-center" href="de.home.html"><img src="assets/media/flags/de.png" class="img-fluid mr-2" style="width: 1.5em; height: 1em; margin-right: 0.4em;">Alemán</a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="ar.home.html"><img src="assets/media/flags/sa.png" class="img-fluid mr-2" style="width: 1.5em; height: 1em; margin-right: 0.4em;">Arabic</a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="ko.home.html"><img src="assets/media/flags/kr.png" class="img-fluid mr-2" style="width: 1.5em; height: 1em; margin-right: 0.4em;">Korean</a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="es.home.html"><img src="assets/media/flags/es.png" class="img-fluid mr-2" style="width: 1.5em; height: 1em; margin-right: 0.4em;">Spanish</a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="fr.home.html"><img src="assets/media/flags/fr.png" class="img-fluid mr-2" style="width: 1.5em; height: 1em; margin-right: 0.4em;">Francés</a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="en.home.html"><img src="assets/media/flags/en.png" class="img-fluid mr-2" style="width: 1.5em; height: 1em; margin-right: 0.4em;">Inglés</a></li>          
+              <li><a class="dropdown-item d-flex align-items-center" href="pt.home.html"><img src="assets/media/flags/pt.png" class="img-fluid mr-2" style="width: 1.5em; height: 1em; margin-right: 0.4em;">Portuguese</a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="ru.home.html"><img src="assets/media/flags/ru.png" class="img-fluid mr-2" style="width: 1.5em; height: 1em; margin-right: 0.4em;">Russian</a></li>
+            </ul>
+          </li>
+        </div>
+      </nav>
+      <hr class="header-divider w-100 p-0 m-0 hr-border">
+    </header>
+    <!-- About me -->
+    <section id="abautme" class="container text-primary mt-3 mt-md-5 mb-5">
+      <div class="row justify-content-between">
+        <div class="col-md-12 col-lg d-flex flex-column justify-content-center">
+<span class="text-secondary">A little bit about me,</span> 
+<h1 class="">I&#39;m Marcos,<span id="typed-abautme" class="text-secondary"></span></h1>
+<img src="assets/media/aboutme/foto-carnet.JPG" class="img-fluid rounded d-lg-none mb-3" style="max-height: 500px;">
+<p class="text-justify">Throughout my childhood, I was fascinated by technology, a fascination that I have carried ever since and which has led me to where I am, a web programmer with a focus on cybersecurity. 
+<br class="d-md-none d-sm-none d-none"><br><br>But not everything is code in my life, I also have a few more facets, personally I like cycling, reading and like every young person today, playing video games. 
+</p>
+        </div>
+        <div class="col-md-12 col-lg-3 rounded d-flex justify-content-center">
+<img src="assets/media/aboutme/foto-carnet.JPG" class="img-fluid rounded d-none d-lg-block">
+</div>
+      </div>
+      <div class="mt-5">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="card col-md-12 col-lg-4 p-0 mb-5 mb-lg-0 border rounded hobby-card-item">
+<img class="card-img-top" src="assets/media/aboutme/bike.jpg">
+<div class="card-body rounded">
+                <h3 class="card-title text-secondary">Cycling</h3>
+                <p class="card-text text-primary text-justify">What I like about this sport is the freedom it feels. Where you can grab a pair of saddlebags and spend four days exploring the mountains, or simply take a short half-hour getaway.</p>
+              </div>
+            </div>
+            <div class="card col-md-12 col-lg-4 p-0 mb-5 mb-lg-0 border rounded hobby-card-item">
+<img class="card-img-top" src="assets/media/aboutme/book.jpg">
+<div class="card-body rounded">
+                <h3 class="card-title text-secondary">Reading</h3>
+                <p class="card-text text-primary text-justify">On the other hand, and unlike cycling, reading gives you another type of freedom. One in which you can imagine everything from a beautiful fantasy setting to bizarre epic scenes. But also travel to the past, or perhaps to the future. It&#39;s a kingdom where the possibilities are endless.</p>
+              </div>
+            </div>
+            <div class="card col-md-12 col-lg-4 p-0 mb-lg-0 border rounded hobby-card-item">
+<img class="card-img-top" src="assets/media/aboutme/WoW.jpg">
+<div class="card-body rounded">
+                <h3 class="card-title text-secondary">Video games</h3>
+                <p class="card-text text-primary text-justify">In turn, video games are another step in that bizarre epic scene, you are no longer alone on the scene, now there are hundreds of people hanging like you enjoying the same fantasy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="assets/scripts/abautme-typed.js"></script>
+    </section>  
+    <!-- Skills -->
+    <section id="skills" class="container text-primary mt-5 mb-5">
+      <div class="row">
+        <div class="col-12">
+<span class="text-secondary">My Skills</span> 
+</div>
+        <div id="Técnicas" class="col-md-12 col-lg mb-md-5">
+          <h2 class="">Technics</h2>
+          <div class="accordion" id="accordionSkillTec">
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingOneSkillTec">
+<button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneSkillTec" aria-expanded="true" aria-controls="collapseOneSkillTec">
+<div class="d-flex justify-content-center" style="margin-right: 10px;">
+<img src="assets/media/skills/technical/front-end.svg">
+</div>
+Front-end 
+ </button> 
+</h3>
+              <div id="collapseOneSkillTec" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionSkillTec">
+                <div class="accordion-body text-justify">
+My skills as a Font-end programmer include: <br> <br> 
+<ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                      <ul>
+                        <li>Sass</li>
+                        <li>Bootstrap</li>
+                      </ul>
+                    <li>JavaScript</li>
+                    <li>Vue.js</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingTwoSkillTec">
+<button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoSkillTec" aria-expanded="false" aria-controls="collapseTwoSkillTec">
+<div class="d-flex justify-content-center" style="margin-right: 10px;">
+<img src="assets/media/skills/technical/back-end.svg">
+</div>
+Back-end 
+ </button> 
+</h3>
+              <div id="collapseTwoSkillTec" class="accordion-collapse collapse" aria-labelledby="headingTwoSkillTec" data-bs-parent="#accordionSkillTec">
+                <div class="accordion-body text-justify">
+My skills as a Back-End Programmer include: <br> <br> 
+<ul>
+                    <li>PHP</li>
+                    <li>Java</li>
+                    <li>MySQL</li>
+                    <li>Docker</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingThreeSkillTec">
+<button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeSkillTec" aria-expanded="false" aria-controls="collapseThreeSkillTec">
+<div class="d-flex justify-content-center" style="margin-right: 10px;">
+<img src="assets/media/skills/technical/github.svg">
+</div>
+Git//GitHub 
+ </button> 
+</h3>
+              <div id="collapseThreeSkillTec" class="accordion-collapse collapse" aria-labelledby="headingThreeSkillTec" data-bs-parent="#accordionSkillTec">
+                <div class="accordion-body text-justify">
+I have experience using repositories as well as in Git itself, both in the work environment and in my personal projects. 
+</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingFourSkillTec">
+<button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourSkillTec" aria-expanded="false" aria-controls="collapseFourSkillTec">
+<div class="d-flex justify-content-center" style="margin-right: 10px;">
+<img src="assets/media/skills/technical/github.svg"><!-- Cambiar svg -->
+</div>
+Other technologies 
+ </button> 
+</h3>
+              <div id="collapseFourSkillTec" class="accordion-collapse collapse" aria-labelledby="headingFourSkillTec" data-bs-parent="#accordionSkillTec">
+                <div class="accordion-body text-justify">
+                  <ul>
+                    <li>I have experience creating Scripts using Bash and Powershell.</li>
+                    <li>I&#39;ve worked briefly with the use of Jenkins to set up CI&amp;CD pipelines.</li>
+                    <li>Automation of backups and processes through the use of CRON.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Sociales" class="mt-5 mt-lg-0 col-md-12 col-lg mb-md-5">
+          <h2 class="">Sociales</h2>
+          <div class="accordion" id="accordionSkillSoft">
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingOneSkillSoft">
+<button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneSkillSoft" aria-expanded="true" aria-controls="collapseOneSkillSoft">
+<div class="d-flex justify-content-center" style="margin-right: 10px;">
+<img src="assets/media/skills/social/documentation.png">
+</div>
+</button>Documentation 
+ 
+</h3>
+              <div id="collapseOneSkillSoft" class="accordion-collapse collapse" aria-labelledby="headingOneSkillSoft" data-bs-parent="#accordionSkillSoft">
+                <div class="accordion-body text-justify">
+I have experience in this field from different aspects, I have created user manuals both for internal use and for non-technical users, and I have documented and structured code, both my own and that of others. 
+</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingTwoSkillSoft">
+<button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoSkillSoft" aria-expanded="false" aria-controls="collapseTwoSkillSoft">
+<div class="d-flex justify-content-center" style="margin-right: 10px;">
+<img src="assets/media/skills/social/communication.png">
+</div>
+Managing resources and people 
+ </button> 
+</h3>
+              <div id="collapseTwoSkillSoft" class="accordion-collapse collapse" aria-labelledby="headingTwoSkillSoft" data-bs-parent="#accordionSkillSoft">
+                <div class="accordion-body text-justify">
+Although I have no experience in this field in the labor sector, I have been working for several years as a Guild Leader and Raid Leader in World of Warcraft, which allows me to say with confidence that I have the ability to coordinate and manage several people as well as their needs and resources. 
+</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingThreeSkillSoft">
+<button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeSkillSoft" aria-expanded="false" aria-controls="collapseThreeSkillSoft">
+<div class="d-flex justify-content-center" style="margin-right: 10px;">
+<img src="assets/media/skills/social/team-work.png">
+</div>
+Teamwork 
+ </button> 
+</h3>
+              <div id="collapseThreeSkillSoft" class="accordion-collapse collapse" aria-labelledby="headingThreeSkillSoft" data-bs-parent="#accordionSkillSoft">
+                <div class="accordion-body text-justify">
+All my years of experience as an MMO player can be applied to this sector, I have worked for a common goal with countless people, some more experienced and others less so. This has given rise to varied situations, including moments of stress, frustration or even failure, but I believe that all these experiences are valuable because they teach you how to move forward. 
+</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingFourSkillSoft">
+<button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourSkillSoft" aria-expanded="false" aria-controls="collapseFourSkillSoft">
+<div class="d-flex justify-content-center" style="margin-right: 10px;">
+<img src="assets/media/skills/social/communication.png">
+</div>
+Communication with non-technical people 
+ </button> 
+</h3>
+              <div id="collapseFourSkillSoft" class="accordion-collapse collapse" aria-labelledby="headingFourSkillSoft" data-bs-parent="#accordionSkillSoft">
+                <div class="accordion-body text-justify">
+Throughout my work experience I have dealt with clients, designers and programmers learning to communicate effectively with all types of levels, from the most experienced to those without relevant technical knowledge. 
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Otras" class="mt-5 mt-lg-0 col-md-12 col-lg">
+          <h2 class="">Other</h2>
+          <div class="accordion" id="accordionSkillOther">
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingOneSkillOther">
+<button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneSkillOther" aria-expanded="true" aria-controls="collapseOneSkillOther">
+<div class="d-flex justify-content-center" style="margin-right: 10px;">
+<img src="assets/media/skills/other/language.png">
+</div>
+</button>Languages 
+ 
+</h3>
+              <div id="collapseOneSkillOther" class="accordion-collapse collapse" aria-labelledby="headingOneSkillOther" data-bs-parent="#accordionSkillOther">
+                <div class="accordion-body text-justify">
+I am currently proficient in three different languages: <br> <br> 
+<ul>
+                    <li>Spanish</li>
+                    <li>English</li>
+                    <li>Valenciano/Catalan</li>
+                  </ul>
+
+Of these languages, my native languages would be Spanish and Valencian/Catalan, while in English I would have a fluent level both in structure, reading and speaking (B2 - C1). 
+</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingTwoSkillOther">
+<button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoSkillOther" aria-expanded="false" aria-controls="collapseTwoSkillOther">
+<div class="d-flex justify-content-center" style="margin-right: 10px;">
+<img src="assets/media/skills/other/seo.svg">
+</div>
+Seo 
+ </button> 
+</h3>
+              <div id="collapseTwoSkillOther" class="accordion-collapse collapse" aria-labelledby="headingTwoSkillOther" data-bs-parent="#accordionSkillOther">
+                <div class="accordion-body text-justify">
+I am familiar with some of the basic SEO techniques for web positioning such as: <br> <br> 
+<ul>
+                    <li>The use of headers.</li>
+                    <li>Image optimization.</li>
+                    <li>Use of tags and meta descriptions.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingThreeSkillOther">
+<button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeSkillOther" aria-expanded="false" aria-controls="collapseThreeSkillOther">
+<div class="d-flex justify-content-center" style="margin-right: 10px;">
+<img src="assets/media/skills/other/ux.svg">
+</div>
+Usability 
+ </button> 
+</h3>
+              <div id="collapseThreeSkillOther" class="accordion-collapse collapse" aria-labelledby="headingThreeSkillOther" data-bs-parent="#accordionSkillOther">
+                <div class="accordion-body text-justify">
+I also have experience in usability in both Desktop and Phone environments. 
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Career -->
+    <section id="career" class="container text-primary mt-5 mb-5">
+      <div class="row">
+        <div class="col-12 mb-5">
+<span class="text-secondary">My Journey</span> 
+<h2>Academic and professional</h2>
+        </div>
+      </div>
+      <div class="timeline row">
+        <div class="timeline__wrap col-12 p-0">
+          <div class="timeline__items">
+            <div class="timeline__item">
+              <div class="timeline__content text-center fs-5" data-bs-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
+2018-20 | Microcomputer Systems and Networks 
+<div class="collapse show" id="collapseOne">
+                  <div class="collapse-content fs-6">
+In this training, I learned how to use the Linux OS as well as the basic concepts of computing, its security, networks, hardware and many other basic elements of computer science and computers. 
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__content text-center fs-5" data-bs-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
+2020-22 | Multiplatform Application Development 
+<div class="collapse show" id="collapseTwo">
+                  <div class="collapse-content fs-6">
+In this training, I deepen my knowledge of programming, databases and the different processes and stages of a project. 
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__content text-center fs-5" data-bs-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
+2021-23 | Studio - Web Developer 
+<div class="collapse" id="collapseThree">
+                  <div class="collapse-content fs-6">
+This job gave me the opportunity to see the work environment just as it gave me a foothold at the beginning of my career as a programmer. 
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__content text-center fs-5" data-bs-toggle="collapse" href="#collapseFour" role="button" aria-expanded="false" aria-controls="collapseFour">
+2023-24 | Cybersecurity Specialization 
+<div class="collapse" id="collapseFour">
+                  <div class="collapse-content fs-6">
+In this training, I learned what cybersecurity is as well as the risks that exist on the internet, how to prevent and mitigate them. 
+</div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__content text-center fs-5" data-bs-toggle="collapse" href="#collapseFive" role="button" aria-expanded="false" aria-controls="collapseFive">
+2024 | BorealOS - Developer 
+<div class="collapse" id="collapseFive">
+                  <div class="collapse-content fs-6">
+This work helped me to internalize what I learned in the specialization course and to begin to give brushstrokes to the field of cybersecurity. 
+</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="assets/scripts/timeline_setup.js"></script>
+    <!-- Projects -->
+    <section id="projects" class="container text-primary mt-5 mb-5">
+      <div class="row">
+        <div class="col-12">
+<span class="text-secondary">My Projects</span> 
+</div>
+        <div class="col-12 mb-5 progress-container">
+          <h2>Business</h2>
+          <ul class="nav nav-tabs" id="bussinesTab" role="tablist">
+            <li class="nav-item" role="presentation">
+<button class="nav-link active" id="bussines-first-tab" data-bs-toggle="tab" data-bs-target="#bussines-first" type="button" role="tab" aria-controls="bussines-first" aria-selected="true">Alexandra</button> 
+</li>
+            <li class="nav-item" role="presentation">
+<button class="nav-link" id="bussines-second-tab" data-bs-toggle="tab" data-bs-target="#bussines-second" type="button" role="tab" aria-controls="bussines-second" aria-selected="false">Postural Ecosystem</button> 
+</li>
+            <li class="nav-item" role="presentation">
+<button class="nav-link" id="bussines-third-tab" data-bs-toggle="tab" data-bs-target="#bussines-third" type="button" role="tab" aria-controls="bussines-third" aria-selected="false">WayToCool</button> 
+</li>
+          </ul>
+          <div class="progress" style="height: 1px;">
+            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="tab-content container p-3" id="myTabContent">
+            <div class="tab-pane fade show active row d-flex" id="bussines-first" role="tabpanel" aria-labelledby="bussines-first-tab">
+              <div class="col-md-12 col-lg-4 mb-3 mb-lg-0 tab-contents d-flex">
+                <div><a class="text-decoration-none text-secondary" href="https://www.coleccionalexandra.com/es" target="_blank"><img src="assets/media/projects/business/Alexandra.png" class="img-fluid"></a></div>
+              </div>
+              <div class="col-md-12 col-lg-8 tab-contents">
+                <h3><a class="text-decoration-none text-secondary" href="https://www.coleccionalexandra.com/es" target="_blank">Alexandra Collection</a></h3>
+                <div class="text-justify">
+This is a project on which I have worked in its entirety, from the creation of the basic structure to the translations. <br><br>I have designed, made responsive, UX, worked with Scripts/Plugins
+, you could say that it has put all my capabilities to work as well as the eye for detail, since the client wanted a pristine product at the design level. 
+</div>
+              </div>
+            </div>
+            <div class="tab-pane fade row d-flex" id="bussines-second" role="tabpanel" aria-labelledby="bussines-second-tab">
+              <div class="col-md-12 col-lg-4 mb-3 mb-lg-0 tab-contents d-flex">
+                <div><a href="https://ecopostural.com/" target="_blank"><img src="assets/media/projects/business/Ecopostural.png" class="img-fluid"></a></div>
+              </div>
+              <div class="col-md-12 col-lg-8 tab-contents">
+                <h3><a class="text-decoration-none text-secondary" href="https://ecopostural.com/" target="_blank">Postural echo</a></h3>
+                <div class="text-justify">
+In a similar way to the “Alexandra Collection” project, I have also worked from the basics of it, adding the complexity it has with its extensive filters, categories, different prices as well as E-commerce. <br><br>
+Some of the things to highlight would be the use of WordPress with plugins such as WooCommerce, YoastSEO, Bootsrap and a variety of Java Script libraries, all without contrasting PhP with which all the necessary modifications 
+ were made to both WordPress and the plugins. 
+</div>
+              </div>
+            </div>
+            <div class="tab-pane fade row d-flex" id="bussines-third" role="tabpanel" aria-labelledby="bussines-third-tab">
+              <div class="col-md-12 col-lg-4 mb-3 mb-lg-0 tab-contents d-flex">
+                <div><a href="https://waytocol.com/" target="_blank"><img src="assets/media/projects/business/Waytocool.png" class="img-fluid"></a></div>
+              </div>
+              <div class="col-md-12 col-lg-8 tab-contents">
+                <h3><a class="text-decoration-none text-secondary" href="https://waytocol.com/" target="_blank">WayToCool</a></h3>
+                <div class="text-justify">
+This project had already started when I joined the work team, however I participated in the migration of several real estate companies to this platform as well as in their derived personalized pages. <br><br>
+This brought me into contact with a side that I had never seen in such depth before, a back, from databases, querys, etc. 
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 progress-container">
+          <h2>Personals</h2>
+          <ul class="nav nav-tabs" id="personalTab" role="tablist">
+            <li class="nav-item" role="presentation">
+<button class="nav-link active" id="personal-first-tab" data-bs-toggle="tab" data-bs-target="#personal-first" type="button" role="tab" aria-controls="personal-first" aria-selected="true">Portfolio</button> 
+</li>
+          </ul>
+          <div class="progress" style="height: 1px;">
+            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="tab-content container p-3" id="myTabContent">
+            <div class="tab-pane fade show active row d-flex" id="personal-first" role="tabpanel" aria-labelledby="personal-first-tab">
+              <div class="col-md-12 mb-3 mb-lg-0 col-lg-4 tab-contents d-flex">
+                <div><a href="https://vextheshadow.github.io/" target="_blank"><img src="assets/media/projects/personal/portfolio.png" class="img-fluid"></a></div>
+              </div>
+              <div class="col-md-12 col-lg-8 tab-contents">
+                <h3><a class="text-decoration-none text-secondary" href="https://vextheshadow.github.io/" target="_blank">My Portfolio</a></h3>
+                <div class="text-justify">
+In this project, I have tried to express in a simplified and accessible way my knowledge of web programming in a way that is visually attractive while fulfilling its main function, summarizing myself as well as my career and aspirations. <br><br>
+All the files used for it can be found in my <a class="text-secondary text-decoration-none" href="https://github.com/VexTheShadow" target="_blank">GitHub</a> repository. 
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Certifications and Acknowledgements -->
+    <section id="certifications-acknowledgements" class="container text-primary mt-5 mb-5">
+      <div class="row justify-content-between">
+        <div class="col-12">
+<span class="text-secondary">Certifications, recognitions and recommendations</span> 
+</div>
+        <div class="col-md-12 col-xl-5">
+          <h2>Certifications</h2>
+          <div id="carouselCertifications" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+<button type="button" data-bs-target="#carouselCertifications" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+<button type="button" data-bs-target="#carouselCertifications" data-bs-slide-to="1" aria-label="Slide 2">
+</button></button></div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+<img src="assets/media/certifications/Cibersecurity_Essentials.jpg" class="d-block w-100">
+<div class="carousel-caption position-static text-center">
+                  <h4><a class="text-decoration-none text-secondary" href="https://www.netacad.com/courses/cybersecurity-essentials?courseLang=en-US" target="_blank">Cybersecurity Essentials</a></h4>
+                  <p class="text-justify">A basic course where you learn computer security as well as basic methods of responding to risky situations.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+<img src="assets/media/certifications/NDG_Linux_Essentials.png" class="d-block w-100">
+<div class="carousel-caption position-static text-center">
+                  <h4><a class="text-decoration-none text-secondary" href="https://www.netacad.com/courses/linux-essentials?courseLang=en-US" target="_blank">Linux Essentials</a></h4>
+                  <p class="text-justify">A basic course in which you learn how to use the Linux OS.</p>
+                </div>
+              </div>
+            </div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselCertifications" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true">
+</span><span class="visually-hidden">Previous 
+ 
+ 
+ <span class="carousel-control-next-icon" aria-hidden="true">
+</span></span></button><button class="carousel-control-next" type="button" data-bs-target="#carouselCertifications" data-bs-slide="next"><span class="visually-hidden">Next</span> 
+</button> 
+</div>
+        </div>
+        <div class="col-md-12 col-xl-5">
+          <h2>Awards</h2>
+          <div id="carouselAcknowledgements" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+<button type="button" data-bs-target="#carouselAcknowledgements" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+<button type="button" data-bs-target="#carouselAcknowledgements" data-bs-slide-to="1" aria-label="Slide 2">
+</button></button></div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+<img src="assets/media/certifications/Atenea-score.png" class="d-block w-100">
+<div class="carousel-caption position-static text-center">
+                  <h4><a class="text-decoration-none text-secondary" href="https://atenea.ccn-cert.cni.es/home" target="_blank">Athena</a></h4>
+                  <p class="text-justify">This recognition shows my progress at Atenea, a platform for IT security challenges.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+<img src="assets/media/certifications/rio-tw-s1.png" class="d-block w-100">
+<div class="carousel-caption position-static text-center">
+                  <h4><a class="text-decoration-none text-secondary" href="https://raider.io/characters/eu/dun-modr/Dekary" target="_blank">Raider.io</a></h4>
+                  <p class="text-justify">This recognition shows my progress in M+ and Raid, thus demonstrating my ability to work as a team and coordinate more people.</p>
+                </div>
+              </div>
+            </div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselAcknowledgements" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true">
+</span><span class="visually-hidden">Previous 
+ 
+ 
+ <span class="carousel-control-next-icon" aria-hidden="true">
+</span></span></button><button class="carousel-control-next" type="button" data-bs-target="#carouselAcknowledgements" data-bs-slide="next"><span class="visually-hidden">Next</span> 
+</button> 
+</div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <hr class="header-divider w-100 p-0 m-0 hr-border">
+    <footer class="container mt-5 mb-5 text-primary">
+      <div class="row d-flex justify-content-around">
+        <div class="col-12 col-md-6 col-lg-3 text-center">
+<span>
+<a href="http://linkedin.com/in/marcos-yus-torio" class="d-flex justify-content-center align-items-center text-secondary text-decoration-none"  target="_blank">
+<div class="d-flex justify-content-center">
+<img src="assets/media/footer/linkedin.svg">
+</div>
+</a></span>LinkedIn 
+ 
+ 
+<p>On LinkedIn you can find a more detailed profile of my work experience as well as my studies. <br><br><a href="assets/media/downloadable/CV-MarcosYus.pdf" class="text-secondary text-decoration-none" target="_blank">You can also download my 
+ CV.</a> <br><br>
+Or contact me through my <a href="mailto:yustoriomarcos@gmail.com" class="text-secondary text-decoration-none" target="_blank">E-Mail</a>. 
+</p>
+          <hr class="w-100 hr-border hr-footer d-block d-md-none">
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 text-center">
+<span>
+<a href="https://github.com/VexTheShadow/Laboral/tree/main/Recomendaciones" class="d-flex justify-content-center align-items-center text-secondary text-decoration-none" target="_blank">
+<div class="d-flex justify-content-center">
+<img src="assets/media/footer/recomendations.png">
+</div>
+Recommendations 
+ </a> 
+ </span> 
+<p>On the other hand, if you prefer to see some opinions about me, here are some of my recommendations:</p>
+          <ul class="list-unstyled">
+            <li><a href="assets/media/downloadable/Carta_de_recomendación_Marcos_Yus.pdf" class="text-secondary text-decoration-none" target="_blank">BorealOS</a></li>
+          </ul>
+          <hr class="w-100 hr-border hr-footer d-block d-md-none">
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 text-center">
+<span>
+<a href="https://github.com/VexTheShadow" class="d-flex justify-content-center align-items-center text-secondary text-decoration-none"  target="_blank">
+<div class="d-flex justify-content-center">
+<img src="assets/media/footer/github.svg">
+</div>
+Git Hub 
+ </a> 
+ </span> 
+<p>In my repository you can find some of my personal projects as well as a variety of things related to programming and cybersecurity.</p>
+          <hr class="w-100 hr-border d-block d-md-none">
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 text-center">
+<span>
+<a href="https://app.hackthebox.com/profile/2043846" class="d-flex justify-content-center align-items-center text-secondary text-decoration-none" target="_blank">
+<div class="d-flex justify-content-center">
+<img src="assets/media/footer/htb.svg">
+</div>
+Hack The Box 
+ </a> 
+ </span> 
+<p>In HackTheBox you can see a little better my areas of skill and the challenges I have overcome as well as what I am working on right now.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
