@@ -5,12 +5,11 @@ const textosPorIdioma = {
     en: ["programmer.","web developer.","cybersecurity technician."],
     ko: ["프로그래머.","웹 개발자.","사이버보안 기술자."],
     de: ["Programmierer.","Webentwickler.","Cybersicherheitstechniker."],
-    ar: ["مبرمج.","مطور ويب.","فني الأمن السيبراني."],
     ru: ["программист.","веб-разработчик.","техник по кибербезопасности."],
     es: ["programador.","desarrollador web.","técnico en ciberseguridad."],
     fr: ["programmeur.","développeur web.","technicien en cybersécurité."],
     pt: ["programador.","desenvolvedor web.","técnico de segurança cibernética."],
-    zhcn: ["程序员.","网页开发人员.","网络安全技术员."],
+    ro: ["programator.","dezvoltator web.","tehnician în securitate cibernetică."],
   };
   // Obtener el idioma de la página
   const idioma = document.documentElement.lang || "es";

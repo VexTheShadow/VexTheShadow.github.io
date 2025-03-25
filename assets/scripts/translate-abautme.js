@@ -1,5 +1,3 @@
-//const jsonData = '.json';
-
 const data = [
     {
         "language": "English",
@@ -15,11 +13,6 @@ const data = [
         "language": "German",
         "symbol": "de",
         "text": "Programmierer| Webentwickler| Cybersicherheitstechniker"
-      },
-      {
-        "language": "Arabic",
-        "symbol": "ar",
-        "text": "مبرمج| مطور ويب| فني الأمن السيبراني"
       },
       {
         "language": "Chinese Simplified",
@@ -45,6 +38,11 @@ const data = [
         "language": "Portuguese",
         "symbol": "pt",
         "text": "programador | desenvolvedor web | técnico de segurança cibernética"
+      },
+      {
+        "language": "Romanian",
+        "symbol": "ro",
+        "text": "programator| dezvoltator web| tehnician în securitate cibernetică"
       }
 ]
 
@@ -64,26 +62,3 @@ data.forEach(item => {
 finalArray.forEach (item => {
     console.log(item)
 })
-/*
-// Usar fetch para cargar el archivo JSON
-fetch(jsonData)
-  .then(data => {
-    data.forEach(item => {
-        if (item.symbol) {
-            var translatedText = item.text.split(",");
-            var translatedTextClean = translatedText.map(item => item.trim());
-            var translatedTextFormatted = translatedTextClean.map(item => item + ".");
-            var translatedTextSringified = JSON.stringify(translatedTextFormatted);
-            var translatedTextReady = `${item.symbol}: ${translatedTextSringified},`;
-            finalArray.push(translatedTextReady);
-        }
-        //console.log(`Idioma: ${item.language}, Símbolo: ${item.symbol}, Texto: ${item.text}`);
-        console.log(finalArray);
-      });
-  })
-  .catch(error => {
-    // Manejar errores
-    console.error('Hubo un problema con la operación fetch:', error);
-  });
-
-*/
